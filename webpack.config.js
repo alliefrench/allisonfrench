@@ -7,7 +7,6 @@ module.exports = {
   entry: [
     '@babel/polyfill', // enables async-await
     './client/index.js',
-    './client/style.css',
   ],
   output: {
     path: __dirname, // assumes your bundle.js will also be in the root of your project folder

@@ -1,15 +1,16 @@
 const db = require('../server/db');
-const User = require('../server/db/models/user');
+const Placeholder = require('../server/db/models/placeholder');
 
 async function seed() {
   await db.sync({ force: true });
   console.log('db synced!');
 
-  const users = await Promise.all([
-    User.create({ email: 'cody@email.com', password: '123' }),
+  const placeholders = await Promise.all([
+    Placeholder.create({ email: 'cody@email.com' }),
+    Placeholder.create({ email: 'calvin@email.com' }),
   ]);
 
-  console.log(`seeded ${users.length} users`);
+  console.log(`seeded ${placeholders.length} placeholders`);
 }
 
 async function runSeed() {

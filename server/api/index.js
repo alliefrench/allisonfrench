@@ -1,7 +1,7 @@
 const router = require('express').Router();
 module.exports = router;
 
-router.use('/user', require('./user'));
+router.use('/placeholder', require('./placeholder'));
 
 router.use(function(req, res, next) {
   const err = new Error('Not found.');
