@@ -12,6 +12,16 @@ const Body = () => {
         body={text}
         link="http://quiltb.herokuapp.com/design/"
       />
+      <Content
+        headline="Headline Two"
+        body={text}
+        link="http://quiltb.herokuapp.com/design/"
+      />
+      <Content
+        headline="Headline Three"
+        body={text}
+        link="http://quiltb.herokuapp.com/design/"
+      />
     </div>
   );
 };

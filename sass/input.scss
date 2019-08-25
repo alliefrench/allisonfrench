@@ -18,7 +18,10 @@ body {
   align-items: center;
   background-color: #333;
   color: $light-color;
-  padding-left: 5%;
+
+  h2 {
+    margin-left: 5%;
+  }
 }
 
 .navbar_links {
@@ -33,11 +36,6 @@ body {
 }
 
 .hero {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 25em;
   background-color: #a3c4bc;
 }
 
@@ -56,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  margin-bottom: 40px;
 
   div {
     margin-top: 10px;
@@ -73,16 +72,33 @@ body {
 }
 
 .content_body {
-  color: $primary-color;
+  color: #7e7771;
   text-align: justify;
   line-height: 1.5em;
 }
 
 .content_button {
   justify-content: center;
-  background-color: #7a8b99;
+  background-color: #7e7771;
   border-radius: 3px;
   width: 140px;
   height: 40px;
   align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    h2 {
+      margin-left: 0;
+    }
+  }
+
+  .navbar_links {
+    width: 100%;
+    margin-left: 0;
+  }
+  .content {
+    max-width: 300px;
+  }
 }

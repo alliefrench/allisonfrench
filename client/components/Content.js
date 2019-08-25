@@ -8,7 +8,7 @@ const Content = props => {
       <div className="content_headline">{headline}</div>
       <div className="content_body">{body}</div>
       <div className="content_button body_flex_horz">
-        <a href={link}>More</a>
+        <a href={link}>More >></a>
       </div>
     </div>
   );
