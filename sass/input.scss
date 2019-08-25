@@ -1,7 +1,33 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$light-color: white;
 
 body {
+  margin: auto 0;
   font: 100% $font-stack;
   color: $primary-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.body_flex_horz {
+  display: flex;
+}
+
+.navbar {
+  align-items: center;
+  background-color: #333;
+  color: $light-color;
+  padding-left: 5%;
+}
+
+.navbar_links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  a {
+    color: $light-color;
+    text-decoration: none;
+  }
+  margin-left: 10%;
 }
