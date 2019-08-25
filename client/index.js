@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import store from './store/index';
 import { Provider } from 'react-redux';
+import App from './App';
 
 ReactDOM.render(
   <Provider store={store}>
-    <div>It's gonna be a great day for a new app!</div>
+    <App />
   </Provider>,
   document.getElementById('app')
 );
