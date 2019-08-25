@@ -6,8 +6,8 @@ async function seed() {
   console.log('db synced!');
 
   const placeholders = await Promise.all([
-    Placeholder.create({ email: 'cody@email.com' }),
-    Placeholder.create({ email: 'calvin@email.com' }),
+    Placeholder.create({ name: 'spot' }),
+    Placeholder.create({ name: 'rusty' }),
   ]);
 
   console.log(`seeded ${placeholders.length} placeholders`);
