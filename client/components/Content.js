@@ -1,5 +1,4 @@
 import React from 'react';
-import Square from './index';
 
 const Content = props => {
   const { headline, subhead, body, link, image } = props;

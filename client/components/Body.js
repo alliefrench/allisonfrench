@@ -14,7 +14,7 @@ const Body = () => {
           headline="Crafting, Online and Off"
           subhead="How my love of making things led me to a new career"
           body={text}
-          link="http://quiltb.herokuapp.com/design/"
+          link="/posts"
         />
         <Content
           image={'code.jpeg'}
