@@ -1,10 +1,12 @@
 import React from 'react';
+import Square from './index';
 
 const Content = props => {
-  const { headline, subhead, body, link } = props;
+  const { headline, subhead, body, link, image } = props;
 
   return (
     <div className="content body_flex_horz">
+      <img className="content_image" src={image} />
       <div className="content_headline">{headline}</div>
       <div className="content_subhead">{subhead}</div>
       <div className="content_body">{body}</div>

@@ -12,7 +12,7 @@ body {
 
 .navbar {
   align-items: center;
-  background-color: #526460;
+  background-color: #353442;
   color: white;
   height: 40px;
 }
@@ -39,8 +39,8 @@ body {
   background-image: linear-gradient(#58566d, white);
 }
 
-.hero_headline {
-  color: white;
+.hello {
+  color: #58566d;
   font-size: 60px;
 }
 
@@ -51,13 +51,28 @@ body {
 }
 
 .about {
-  align-self: stretch;
-  max-width: 1100px;
-  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1180px;
+  min-height: 300px;
   margin-top: 60px;
   opacity: 0.6;
   background-color: white;
-  margin-left: 100px;
+  padding: 20px;
+  line-height: 1.5em;
+}
+
+i {
+  color: #58566d;
+  font-size: 30px;
+}
+
+.stack {
+  width: 30%;
+  align-self: center;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 .body_content {
@@ -89,6 +104,11 @@ body {
   align-self: center;
 }
 
+.content_image {
+  width: 100px;
+  height: 100px;
+}
+
 .content_headline {
   font-size: 30px;
   color: #526460;
@@ -101,6 +121,7 @@ body {
 
 .content_body {
   color: #7e7771;
+  font-size: 12px;
   line-height: 1.5em;
 }
 
@@ -129,6 +150,10 @@ body {
   .content {
     max-width: 300px;
   }
+}
+.konvajs-content {
+  margin: 0px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=input.css.map */

@@ -10,13 +10,15 @@ const Body = () => {
       <About />
       <div className="body_content body_flex_horz">
         <Content
-          headline="Headline One"
-          subhead="This is a subhead"
+          image={'square.png'}
+          headline="Crafting, Online and Off"
+          subhead="How my love of making things led me to a new career"
           body={text}
           link="http://quiltb.herokuapp.com/design/"
         />
         <Content
-          headline="Headline Two"
+          image={'code.jpeg'}
+          headline="10 Things I love about Coding"
           subhead="What do you think?"
           body={text}
           link="http://quiltb.herokuapp.com/design/"
