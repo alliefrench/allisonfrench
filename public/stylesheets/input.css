@@ -37,22 +37,20 @@ body {
   font-size: 14px;
 }
 
-.hero {
-  align-self: stretch;
-  height: 500px;
-  z-index: 0;
-}
-
-.hello {
+.posts_callout, .hello {
   font-family: "Work Sans", sans-serif;
   font-size: 80px;
   color: #e8c640;
 }
 
-.body_container {
+.home_page {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home_page_column {
+  max-width: 75%;
 }
 
 .about {
@@ -82,7 +80,7 @@ i {
 }
 
 .body_content {
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 20px;
   margin-top: 30px;
@@ -91,7 +89,7 @@ i {
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 450px;
   margin: 20px;
   z-index: 10;
   background-color: white;
@@ -163,6 +161,215 @@ i {
   .content {
     max-width: 300px;
   }
+}
+body {
+  margin: auto 0;
+  font: 100% "Work Sans", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.body_flex_horz {
+  display: flex;
+}
+
+.navbar {
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 40px;
+  border-bottom-width: 1px;
+  border-bottom-color: #b9b9b9;
+  border-bottom-style: solid;
+  font-family: "Work Sans", sans-serif;
+}
+.navbar .logo {
+  font-size: 20px;
+}
+
+.navbar_links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+.navbar_links a {
+  color: #333;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+}
+
+.posts_callout, .hello {
+  font-family: "Work Sans", sans-serif;
+  font-size: 80px;
+  color: #e8c640;
+}
+
+.home_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_page_column {
+  max-width: 75%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1040px;
+  min-height: 300px;
+  margin-top: 60px;
+  padding: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  color: #333;
+}
+
+i {
+  color: #e8c640;
+  font-size: 30px;
+}
+
+.stack {
+  width: 30%;
+  align-self: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.body_content {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 20px;
+  z-index: 10;
+  background-color: white;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f7f9f4;
+  box-shadow: 3px 3px 3px #a19f9d;
+}
+.content div {
+  margin-top: 10px;
+}
+.content .content_button {
+  margin-top: 20px;
+}
+.content a {
+  color: white;
+  text-decoration: none;
+  align-self: center;
+}
+
+.content_image {
+  width: 100px;
+  height: 100px;
+}
+
+.content_headline {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  color: #526460;
+}
+
+.content_subhead {
+  font-size: 24px;
+  font-family: "Work Sans", sans-serif;
+  color: #b9b9b9;
+}
+
+.content_body {
+  color: #333;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5em;
+}
+
+.content_button {
+  justify-content: center;
+  background-color: #e8c640;
+  font-family: "Karla", sans-serif;
+  border-radius: 3px;
+  width: 140px;
+  height: 40px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar h2 {
+    margin-left: 0;
+  }
+
+  .navbar_links {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .content {
+    max-width: 300px;
+  }
+}
+.posts_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts_page_column {
+  max-width: 70%;
+}
+
+.posts_callout {
+  align-self: flex-start;
+  margin-top: 60px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 60px;
+}
+
+.post_image {
+  width: 200px;
+  height: 200px;
+}
+
+.post_headline {
+  font-family: "Work Sans", sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.post_date {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post_body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5em;
 }
 
 /*# sourceMappingURL=input.css.map */

@@ -1,0 +1,57 @@
+@import 'home';
+
+$font-stack: 'Work Sans', sans-serif;
+$font-headlines: 'Work Sans', sans-serif;
+$font-body: 'Karla', sans-serif;
+$primary-color: #333;
+$medium-color: #b9b9b9;
+$light-color: white;
+$accent-color: #e8c640;
+$accent2-color: #70c1b3;
+
+.posts_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts_page_column {
+  max-width: 70%;
+}
+
+.posts_callout {
+  @extend %accent_header;
+  align-self: flex-start;
+  margin-top: 60px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 60px;
+}
+
+.post_image {
+  width: 200px;
+  height: 200px;
+}
+
+.post_headline {
+  font-family: $font-headlines;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.post_date {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post_body {
+  font-family: $font-body;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5em;
+}

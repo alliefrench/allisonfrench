@@ -6,26 +6,28 @@ const text =
 
 const Body = () => {
   return (
-    <div className="body_container hero">
-      <About />
-      <div className="body_content body_flex_horz">
-        <Content
-          image={'square.png'}
-          headline="Crafting, Online and Off"
-          body={text}
-          link="/posts"
-        />
-        <Content
-          image={'code.jpeg'}
-          headline="10 Things I love about Coding"
-          body={text}
-          link="http://quiltb.herokuapp.com/design/"
-        />
-        <Content
-          headline="Headline Three"
-          body={text}
-          link="http://quiltb.herokuapp.com/design/"
-        />
+    <div className="home_page">
+      <div className="home_page_column">
+        <About />
+        <div className="body_content body_flex_horz">
+          <Content
+            image={'square.png'}
+            headline="Crafting, Online and Off"
+            body={text}
+            link="/posts"
+          />
+          <Content
+            image={'code.jpeg'}
+            headline="10 Things I love about Coding"
+            body={text}
+            link="http://quiltb.herokuapp.com/design/"
+          />
+          <Content
+            headline="Headline Three"
+            body={text}
+            link="http://quiltb.herokuapp.com/design/"
+          />
+        </div>
       </div>
     </div>
   );
