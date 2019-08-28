@@ -1,6 +1,11 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Work Sans', sans-serif;
+$font-headlines: 'Work Sans', sans-serif;
+$font-body: 'Karla', sans-serif;
 $primary-color: #333;
+$medium-color: #b9b9b9;
 $light-color: white;
+$accent-color: #e8c640;
+$accent2-color: #70c1b3;
 
 body {
   margin: auto 0;
@@ -15,13 +20,16 @@ body {
 }
 
 .navbar {
+  justify-content: center;
   align-items: center;
-  background-color: #353442;
-  color: $light-color;
+  color: $primary-color;
   height: 40px;
+  border-bottom-width: 1px;
+  border-bottom-color: $medium-color;
+  border-bottom-style: solid;
+  font-family: $font-headlines;
 
   .logo {
-    margin-left: 5%;
     font-size: 20px;
   }
 }
@@ -31,8 +39,10 @@ body {
   width: 40%;
   justify-content: space-around;
   a {
-    color: $light-color;
+    color: $primary-color;
     text-decoration: none;
+    font-family: $font-body;
+    font-size: 14px;
   }
   margin-left: 10%;
 }
@@ -41,12 +51,12 @@ body {
   align-self: stretch;
   height: 500px;
   z-index: 0;
-  background-image: linear-gradient(#58566d, white);
 }
 
 .hello {
-  color: #58566d;
-  font-size: 60px;
+  font-family: $font-headlines;
+  font-size: 80px;
+  color: $accent-color;
 }
 
 .body_container {
@@ -59,17 +69,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1180px;
+  max-width: 1040px;
   min-height: 300px;
   margin-top: 60px;
-  opacity: 0.6;
-  background-color: white;
   padding: 20px;
   line-height: 1.5em;
+  font-size: 18px;
+  font-family: $font-body;
+  color: $primary-color;
 }
 
 i {
-  color: #58566d;
+  color: $accent-color;
   font-size: 30px;
 }
 
@@ -90,11 +101,14 @@ i {
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 340px;
+  max-width: 300px;
   margin: 20px;
   z-index: 10;
   background-color: white;
   padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f7f9f4;
   box-shadow: 3px 3px 3px #a19f9d;
 
   div {
@@ -118,25 +132,28 @@ i {
 }
 
 .content_headline {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: $font-headlines;
   color: #526460;
 }
 
 .content_subhead {
   font-size: 24px;
-  color: #7e7771;
+  font-family: $font-headlines;
+  color: $medium-color;
 }
 
 .content_body {
-  color: #7e7771;
-  font-size: 12px;
-  // text-align: justify;
+  color: $primary-color;
+  font-size: 16px;
+  font-family: $font-body;
   line-height: 1.5em;
 }
 
 .content_button {
   justify-content: center;
-  background-color: #7e7771;
+  background-color: $accent-color;
+  font-family: $font-body;
   border-radius: 3px;
   width: 140px;
   height: 40px;
@@ -158,9 +175,4 @@ i {
   .content {
     max-width: 300px;
   }
-}
-
-.konvajs-content {
-  margin: 0px;
-  width: 100px;
 }

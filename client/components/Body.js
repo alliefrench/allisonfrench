@@ -12,20 +12,17 @@ const Body = () => {
         <Content
           image={'square.png'}
           headline="Crafting, Online and Off"
-          subhead="How my love of making things led me to a new career"
           body={text}
           link="/posts"
         />
         <Content
           image={'code.jpeg'}
           headline="10 Things I love about Coding"
-          subhead="What do you think?"
           body={text}
           link="http://quiltb.herokuapp.com/design/"
         />
         <Content
           headline="Headline Three"
-          subhead="Take this action now."
           body={text}
           link="http://quiltb.herokuapp.com/design/"
         />
