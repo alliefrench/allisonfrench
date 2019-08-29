@@ -1,7 +1,7 @@
 import React from 'react';
 import { Post } from './index';
 
-const image = 'square.png';
+const image = 'code.jpeg';
 const headline = '10 Things I Love About Coding';
 const date = 'August 28, 2019';
 
@@ -12,8 +12,8 @@ const Posts = () => {
   return (
     <div className="posts_page">
       <div className="posts_page_column">
-        <div className="posts_callout">Cheeky headline TBD!</div>
-        <Post image={image} headline={headline} date={date} body={text} />;
+        <div className="posts_callout">Musings about tech and life in NYC</div>
+        <Post image={image} title={headline} date={date} body={text} />
       </div>
     </div>
   );

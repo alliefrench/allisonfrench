@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from './index';
+import { Post } from './index';
 
 const image = 'square.png';
 const projectName = 'quilt-B';
@@ -11,14 +11,8 @@ const Projects = () => {
   return (
     <div className="posts_page">
       <div className="posts_page_column">
-        <div className="posts_callout">Cheeky headline TBD!</div>
-        <Project
-          image={image}
-          projectName={projectName}
-          launched={launched}
-          about={about}
-        />
-        ;
+        <div className="posts_callout">My Code Babies. </div>
+        <Post image={image} title={projectName} date={launched} body={about} />
       </div>
     </div>
   );
