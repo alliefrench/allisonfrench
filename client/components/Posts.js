@@ -2,13 +2,6 @@ import React from 'react';
 import { Post } from './index';
 import axios from 'axios';
 
-const image = 'code.jpeg';
-const headline = '10 Things I Love About Coding';
-const date = 'August 28, 2019';
-
-const text =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut. Augue eget arcu dictum varius duis.';
-
 class Posts extends React.Component {
   constructor() {
     super();
@@ -24,7 +17,6 @@ class Posts extends React.Component {
       const postsData = await axios.get('/api/posts');
       const posts = postsData.data;
       posts.sort((a, b) => b.id - a.id);
-      console.log(posts);
       this.setState({ posts });
     } catch (error) {
       console.error(error);
