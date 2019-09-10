@@ -14,9 +14,10 @@
 // if (process.env.NODE_ENV === 'test') {
 //   after('close database connection', () => db.close());
 // }
+const dotenv = require('dotenv');
+dotenv.config();
 
 const admin = require('firebase-admin');
-console.log('COLORTERM', process.env.FIREBASE_CONFIG);
 const serviceAccount = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 console.log(serviceAccount.type);
 

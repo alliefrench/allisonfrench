@@ -2,14 +2,14 @@ const router = require('express').Router();
 const db = require('../db');
 
 router.get('/', async function(req, res, next) {
-  let postRef = db.collection('posts').doc('1');
+  let postRef = await db.collection('posts').doc('1');
   let getDoc = postRef
     .get()
     .then(doc => {
       if (!doc.exists) {
         console.log('No such document!');
       } else {
-        console.log('Document data:', doc.data());
+        res.send(doc.data());
       }
     })
     .catch(err => {
