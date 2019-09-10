@@ -21,8 +21,11 @@ class Posts extends React.Component {
 
   async getPosts() {
     try {
-      const posts = await axios.get('/api/posts');
-      this.setState({ ...this.state, posts });
+      const postsData = await axios.get('/api/posts');
+      const posts = postsData.data;
+      posts.sort((a, b) => b.id - a.id);
+      console.log(posts);
+      this.setState({ posts });
     } catch (error) {
       console.error(error);
     }
@@ -35,7 +38,15 @@ class Posts extends React.Component {
           <div className="posts_callout">
             Musings about tech and life in NYC
           </div>
-          <Post image={image} title={headline} date={date} body={text} />
+          {this.state.posts.map(post => (
+            <Post
+              key={post.id}
+              image={post.image}
+              title={post.title}
+              date={post.date}
+              body={post.body}
+            />
+          ))}
         </div>
       </div>
     );
