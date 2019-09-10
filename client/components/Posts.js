@@ -1,6 +1,6 @@
 import React from 'react';
 import { Post } from './index';
-import firebase from 'firebase';
+import axios from 'axios';
 
 const image = 'code.jpeg';
 const headline = '10 Things I Love About Coding';
@@ -20,8 +20,12 @@ class Posts extends React.Component {
   }
 
   async getPosts() {
-    const posts = await firebase.firestore.Query.get(posts);
-    this.setState({ ...this.state, posts });
+    try {
+      const posts = await axios.get('/api/posts');
+      this.setState({ ...this.state, posts });
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   render() {

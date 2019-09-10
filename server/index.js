@@ -26,10 +26,10 @@ app.use(function(err, req, res, next) {
 
 const port = process.env.PORT || 3000;
 
-db.sync().then(function() {
-  app.listen(port, function() {
-    console.log(`Heyyyy, I'm listening on port ${port}`);
-  });
+// db.sync().then(function() {
+app.listen(port, function() {
+  console.log(`Heyyyy, I'm listening on port ${port}`);
 });
+// });
 
 module.exports = app;

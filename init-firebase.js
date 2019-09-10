@@ -1,4 +1,4 @@
-const firebaseConfig = {
+const FIREBASE_CONFIG = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: 'allisonfrench-17757.firebaseapp.com',
   databaseURL: 'https://allisonfrench-17757.firebaseio.com',
